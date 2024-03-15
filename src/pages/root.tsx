@@ -13,7 +13,6 @@ export const Root: Component = () => {
   const [isLoading, setIsLoading] = createSignal(false)
   const navi = useNavigate()
   const { setAuthData, authData } = useAuthData()
-  const [addressType, setAddressType] = createSignal<'p2tr' | 'p2wpkh'>('p2tr')
 
   const onConenctPopup = async () => {
     setIsLoading(true)
@@ -41,7 +40,7 @@ export const Root: Component = () => {
     })
     const url = buildConnectUrl(
       {
-        requestAddressType: addressType(),
+        requestAddressType: authData.addressType,
         redirectURL: redirectURL,
       },
       'redirect'
@@ -61,10 +60,12 @@ export const Root: Component = () => {
             class="select select-primary w-full max-w-xs"
             value="p2tr"
             onChange={(e) => {
-              const val = e.currentTarget.value
-              setAddressType(val as any)
+              const val = e.currentTarget.value as 'p2tr' | 'p2wpkh'
+              setAuthData({
+                addressType: val,
+              })
               initConfig({
-                requestAddressType: addressType(),
+                requestAddressType: val,
               })
             }}
           >

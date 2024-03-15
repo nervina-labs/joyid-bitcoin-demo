@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.24.0",
-    "@joyid/bitcoin": "0.0.1-alpha.0",
+    "@joyid/bitcoin": "0.0.1-alpha.2",
     "@rgbpp-sdk/btc": "0.0.0-snap-20240313090728",
     "@solid-primitives/clipboard": "^1.5.4",
     "@solid-primitives/storage": "^2.1.1",

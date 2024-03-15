@@ -9,8 +9,8 @@ dependencies:
     specifier: ^7.24.0
     version: 7.24.0
   '@joyid/bitcoin':
-    specifier: 0.0.1-alpha.0
-    version: 0.0.1-alpha.0
+    specifier: 0.0.1-alpha.2
+    version: 0.0.1-alpha.2
   '@rgbpp-sdk/btc':
     specifier: 0.0.0-snap-20240313090728
     version: 0.0.0-snap-20240313090728
@@ -698,8 +698,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@joyid/bitcoin@0.0.1-alpha.0:
-    resolution: {integrity: sha512-JF1ppZ2Sv3DInR8Ie997N11muCqFIIef3ulAJv3DiCRHxBrjrUFrZndJwO+S0CSnBQMy07GrpYeQ/3bMXhVSTA==}
+  /@joyid/bitcoin@0.0.1-alpha.2:
+    resolution: {integrity: sha512-SpAQk8uvQwmkA7HWtwj5V1yaxcPVTkYdFG+8PiqeymRtEtw7ASkMnzEDafJgkpWv2sjeIsIP//Zz8EslT79zRg==}
     dev: false
 
   /@jridgewell/gen-mapping@0.1.1:

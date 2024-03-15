@@ -6,13 +6,15 @@ import {
   connectCallback,
 } from '@joyid/bitcoin'
 import { RedirectAction } from '../utils'
+import { useAuthData } from '../hooks/localStorage'
 
 export const Redirect: Component = () => {
   const [search] = useSearchParams<Record<'action', RedirectAction>>()
+  const { authData } = useAuthData()
   const redirectHome = () => {
     let state
     try {
-      state = connectCallback()
+      state = connectCallback(window.location.href, authData.addressType)
     } catch (error) {
       //
     }

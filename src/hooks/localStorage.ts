@@ -24,6 +24,7 @@ const [authData, setAuthData] = createLocalStore<{
   address: string
   pubkey: string
   mode: 'popup' | 'redirect'
+  addressType: 'p2tr' | 'p2wpkh'
 }>(storageKey, EMPTY_OBJECT)
 
 export function useAuthData() {
