@@ -25,14 +25,6 @@ export default defineConfig({
         rollupNodePolyFill(),
         // inject({ Buffer: ['buffer/', 'Buffer'] }),
       ] as any[],
-      output: {
-        manualChunks: {
-          '@ckb-lumos/base': ['@ckb-lumos/base'],
-          '@ckb-lumos/codec': ['@ckb-lumos/codec'],
-          '@ckb-lumos/helpers': ['@ckb-lumos/helpers'],
-          'bitcore-lib': ['bitcore-lib'],
-        },
-      },
     },
   },
   resolve: {
