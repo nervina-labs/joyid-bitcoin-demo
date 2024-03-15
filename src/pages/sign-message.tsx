@@ -66,7 +66,12 @@ export const SignMessage: Component = () => {
         )
         alert(!!res)
       } else {
-        //
+        const res = Message.verifyMessageOfECDSA(
+          authData.pubkey,
+          challenge(),
+          signature()
+        )
+        alert(!!res)
       }
     } catch (error) {
       console.log(error)

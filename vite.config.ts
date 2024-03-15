@@ -30,6 +30,7 @@ export default defineConfig({
   resolve: {
     alias: {
       stream: 'stream-browserify',
+      crypto: 'crypto-browserify',
     },
   },
   optimizeDeps: {
